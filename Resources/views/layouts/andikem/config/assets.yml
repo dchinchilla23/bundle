@@ -1,0 +1,10 @@
+styles:
+    inputs:
+      - 'bundles/summafrontend/andikem/scss/settings/global-settings.scss'
+      - 'bundles/orofrontend/blank/scss/variables/headings-config.scss' : 'bundles/summafrontend/andikem/scss/variables/headings-config.scss'
+      - 'bundles/summafrontend/andikem/scss/variables/embedded-list/embedded-list-config.scss'
+      - 'bundles/orofrontend/css/style.css' : ~
+      - 'bundles/summafrontend/andikem/scss/styles.scss'
+      - 'bundles/orofrontend/blank/scss/variables/scroll-top-config.scss' : 'bundles/summafrontend/andikem/scss/variables/scroll-top-config.scss'
+    filters: ['cssrewrite', 'cssmin']
+    output: 'css/styles.css'

@@ -1,0 +1,125 @@
+oro:
+    privilege:
+        category.commerce.label: 'Commerce'
+    auth:
+        description:
+            logo: OroCommerce
+            main: B2B eCommerce Platform
+            text: OroCommerce reduces the complexity for custom eCommerce projects
+
+oro_frontend:
+    logo:
+        alt:
+            label: 'OroCommerce'
+    widget_form_component:
+        save_flash_success: Saved successfully
+    form:
+        install_configuration:
+            web:
+                header: Web settings
+                backend_prefix: Backend prefix
+    theme:
+        demo.title: 'OroPlatform theme'
+    system_configuration:
+        groups:
+            design.title: 'Design'
+            theme.title: 'Theme'
+            theme_settings.title: 'Theme Settings'
+            commerce.title: 'Commerce'
+            page_templates.title: 'Page Templates'
+            guests.title: 'Guests'
+            website_access.title: 'Website Access'
+            filter_settings.title: 'Filter Settings'
+        fields:
+            frontend_theme.label: 'Theme'
+            page_template_collection.label: 'Page Templates'
+            no_page_template.label: 'Default template'
+            page_template_routes.label: 'Page Template'
+            guest_access_enabled.label: 'Enable Guest Access'
+            filter_value_selectors:
+                label: 'Value Selectors'
+                tooltip: 'The drop-down selector is better optimized for selecting from a long list of values.'
+                option:
+                    dropdown: 'Drop-down'
+                    all_at_once: 'All at once'
+        messages:
+            no_page_templates: 'No templates available.'
+    copyright.label: '2018 Oro Inc. All Rights Reserved.'
+
+    home_page:
+        title: 'Home page'
+        welcome: 'Welcome'
+
+    exception:
+        default: 'The System is currently under maintenance and should be available in a few minutes.'
+        code.403: "You don't have permission to access this page."
+        code.404: 'The page you requested could not be found. Please make sure the path you used is correct.'
+        back: 'Click to go back'
+
+        status_text:
+            400: 'Bad Request'
+            401: 'Unauthorized'
+            402: 'Payment Required'
+            403: 'Forbidden'
+            404: 'Not Found'
+            405: 'Method Not Allowed'
+            406: 'Not Acceptable'
+            407: 'Proxy Authentication Required'
+            408: 'Request Timeout'
+            409: 'Conflict'
+            410: 'Gone'
+            411: 'Length Required'
+            412: 'Precondition Failed'
+            413: 'Payload Too Large'
+            414: 'URI Too Long'
+            415: 'Unsupported Media Type'
+            416: 'Range Not Satisfiable'
+            417: 'Expectation Failed'
+            421: 'Misdirected Request'
+            422: 'Unprocessable Entity'
+            423: 'Locked'
+            424: 'Failed Dependency'
+            425: 'Too Early'
+            426: 'Upgrade Required'
+            428: 'Precondition Required'
+            429: 'Too Many Requests'
+            431: 'Request Header Fields Too Large'
+            451: 'Unavailable For Legal Reasons'
+            500: 'Internal Server Error'
+            501: 'Not Implemented'
+            502: 'Bad Gateway'
+            503: 'Service Unavailable'
+            504: 'Gateway Timeout'
+            505: 'HTTP Version Not Supported'
+            506: 'Variant Also Negotiates'
+            507: 'Insufficient Storage'
+            508: 'Loop Detected'
+            510: 'Not Extended'
+            511: 'Network Authentication Required'
+
+    fullscreen_popup:
+        menu:
+            label: "Menu"
+        back:
+            label: "Back"
+
+    combined_buttons:
+        more_actions.label: More actions
+
+    datagrid_views:
+        saved_views: 'Saved Views'
+
+    ui:
+        tab_view_more: 'View more...'
+
+    error:
+        404_title: 'Página no disponible'
+        404_description: 'La página a la que intenta acceder no está disponible o no se encuentra en nuestro sitio.'
+        404_description1: 'Por favor regrese a la página anterior o a la home de Andikem.'
+        500_title: 'Servicio no disponible'
+        503_title: 'Estamos realizando tareas de mantenimiento'
+        503_description: 'Estamos trabajando para darle una mejor experiencia en nuestro sitio. Por favor vuelva a ingresar al sitio más tarde. Perdón por las molestias ocacionadas.'
+        503_description1: '¡Muchas gracias!'
+        generic_title: 'ERROR'
+        generic_description: 'Se ha producido un error. Por favor vuelva atrás o a la homepage.'
+        back_home: 'IR A LA HOME'

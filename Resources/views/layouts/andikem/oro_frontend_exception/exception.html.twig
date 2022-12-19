@@ -1,0 +1,59 @@
+{% block _exception_widget %}
+    {% set attr = attr|merge({
+        class: attr.class|default('')
+    }) %}
+    <div {{ block('block_attributes') }}>
+        {% if status_code == 404 %}
+            <div class="error-page">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <h1>{{ 'oro_frontend.error.404_title'|trans }}</h1>
+              <p>{{ 'oro_frontend.error.404_description'|trans }}</p>
+              <p>{{ 'oro_frontend.error.404_description1'|trans }}</p>
+              <a href="{{ path('oro_frontend_root') }}">{{ 'oro_frontend.error.back_home'|trans }}</a>
+            </div>
+        {% elseif status_code == 403 %}
+            <div class="error-page">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <h1>{{ 'oro_frontend.error.404_title'|trans }}</h1>
+              <p>{{ 'oro_frontend.error.404_description'|trans }}</p>
+              <p>{{ 'oro_frontend.error.404_description1'|trans }}</p>
+              <a href="{{ path('oro_frontend_root') }}">{{ 'oro_frontend.error.back_home'|trans }}</a>
+            </div>
+        {% elseif status_code == 500 %}
+            <style type="text/css">
+                .page-header,
+                .page-footer,
+                .scroll-top,
+                .copyright {
+                    display: none;
+                }
+            </style>
+            <div class="error-page">
+              <i class="fa fa-exclamation" aria-hidden="true"></i>
+              <h1>{{ 'oro_frontend.error.500_title'|trans }}</h1>
+            </div>
+        {% elseif status_code == 503 %}
+            <style type="text/css">
+                .page-header,
+                .page-footer,
+                .scroll-top,
+                .copyright {
+                    display: none;
+                }
+            </style>
+            <div class="error-page">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <h1>{{ 'oro_frontend.error.503_title'|trans }}</h1>
+              <p>{{ 'oro_frontend.error.503_description'|trans }}</p>
+              <p>{{ 'oro_frontend.error.503_description1'|trans }}</p>
+              <img class="logo" alt="Andikem Logo" src="bundles/summafrontend/andikem/images/andikem-logo.svg">
+            </div>
+        {% else %}
+            <div class="error-page">
+              <i class="fa fa-exclamation" aria-hidden="true"></i>
+              <h1>{{ 'oro_frontend.error.generic_title'|trans }}</h1>
+              <p>{{ 'oro_frontend.error.generic_description'|trans }}</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

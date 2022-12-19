@@ -1,0 +1,6 @@
+styles:
+    inputs:
+      - 'bundles/summafrontend/andino/scss/settings/global-settings.scss'
+      
+    filters: ['cssrewrite', 'cssmin']
+    output: 'css/layout/andino/styles.css'
